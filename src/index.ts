@@ -1,0 +1,1 @@
+export * from './with-storage.hoc';

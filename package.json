@@ -1,0 +1,69 @@
+{
+  "name": "react-browser-storage",
+  "version": "0.1.0",
+  "description": "Simple, Easy, Local (or Session) Storage in React",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build && npm test && npm run lint",
+    "lint": "eslint src/**",
+    "build": "tsc",
+    "test": "jest",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmoore1127/react-browser-storage.git"
+  },
+  "keywords": [
+    "react",
+    "storage",
+    "persistence",
+    "hooks",
+    "hoc",
+    "ssr",
+    "localstorage",
+    "sessionstorage"
+  ],
+  "author": "Jared Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmoore1127/react-browser-storage/issues"
+  },
+  "homepage": "https://github.com/jmoore1127/react-browser-storage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.8.13",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "babel-jest": "^24.7.1",
+    "crossenv": "0.0.2-security",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.7.1",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.4.4"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ],
+    "coverageDirectory": "coverage",
+    "setupFilesAfterEnv": [
+      "./test-setup.js"
+    ]
+  }
+}
