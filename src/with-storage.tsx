@@ -1,17 +1,8 @@
 import React from 'react';
 import { Component, ComponentType } from 'react';
+import { StorageType, StorageMap, StorageOperations, StorageValue } from './types';
 
-export type Storable = boolean|string|number|object;
-export type StorageValue<T = Storable> = T|null;
-export type StorageSetter<T = Storable> = (a: T) => void;
-export type StorageRemover = () => void;
-export type StorageOperations<T = Storable> = [StorageValue<T>, StorageSetter<T>, StorageRemover];
-
-export interface StorageMap {
-    [key: string]: StorageOperations<Storable>;
-};
-
-export const withStorage = <T extends string>(keys: T[] = [], storageType: 'local'|'session' = 'local', prefix = '') =>
+export const withStorage = <T extends string>(keys: T[] = [], storageType: StorageType = 'local', prefix = '') =>
     <WrappedProps extends object>(WrappedComponent: ComponentType<WrappedProps>): ComponentType<WrappedProps> =>
         (class WithStorageHoc extends Component<WrappedProps,StorageMap> {
             static displayName = `withStorage(${WrappedComponent.displayName || 'Component'})`;

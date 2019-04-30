@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { withStorage } from "./with-storage.hoc";
+import { withStorage } from "./with-storage";
 
 const TestComponent = () => <div />;
 

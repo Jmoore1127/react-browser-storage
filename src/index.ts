@@ -1,1 +1,2 @@
-export * from './with-storage.hoc';
+export * from './with-storage';
+export * from './use-storage';
