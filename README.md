@@ -1,4 +1,10 @@
 # react-browser-storage
+[![Version](https://img.shields.io/npm/v/react-storage-hooks.svg)](https://www.npmjs.com/package/react-browser-storage)
+![Dependencies](https://img.shields.io/david/jmoore1127/react-browser-storage.svg)
+[![Test coverage](https://codecov.io/gh/jmoore1127/react-browser-storage/branch/master/graph/badge.svg)](https://codecov.io/gh/jmoore1127/react-browser-storage)
+![Bundle size](https://img.shields.io/bundlephobia/minzip/react-browser-storage.svg)
+[![MIT licensed](https://img.shields.io/github/license/jmoore1127/react-browser-storage.svg)](https://github.com/jmoore1127/react-browser-storage/blob/master/LICENSE)
+
 Simple, Easy, Local (or Session) Storage in React
 
 * Simple API
