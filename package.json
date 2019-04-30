@@ -10,7 +10,7 @@
     "lint": "eslint src/**",
     "build": "tsc",
     "test": "jest",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist && rimraf coverage"
   },
   "repository": {
     "type": "git",
@@ -59,11 +59,7 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": [
-      "json",
-      "html"
-    ],
-    "coverageDirectory": "coverage",
+    "coverageDirectory": "./coverage",
     "setupFilesAfterEnv": [
       "./test-setup.js"
     ]
