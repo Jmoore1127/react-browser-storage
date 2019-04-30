@@ -31,6 +31,10 @@
     "url": "https://github.com/jmoore1127/react-browser-storage/issues"
   },
   "homepage": "https://github.com/jmoore1127/react-browser-storage#readme",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
@@ -47,12 +51,10 @@
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.7.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "rimraf": "^2.6.3",
     "typescript": "^3.4.4"
-  },
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
   },
   "jest": {
     "collectCoverage": true,
