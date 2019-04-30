@@ -2,7 +2,7 @@ language: node_js
 node_js: lts/*
 cache: npm
 before_script: npm install codecov -g
-script: npm run check
+script: npm run cicd
 after_success: codecov
 deploy:
   provider: npm
